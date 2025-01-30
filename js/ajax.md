@@ -28,7 +28,7 @@ $ajax.submit(data, (resp) => {
 });
 ```
 
-`GET Request` with addition options
+Sending `GET Request` with addition options
 
 ```js
 const $ajax = new AjaxRequest("https://....", "GET");
@@ -38,4 +38,17 @@ $ajax.onfail = (err) => showLoader(false);
 $ajax.submit(data, (resp) => {
   console.log("Event on success sending request");
 });
+```
+
+## Generate Excel via Ajax Request
+
+- Additional, you should include tools file [ajax.js](ajax/excel-ajax.js)
+
+### How To Use
+
+```js
+const data = new FormData(); // req params
+const action = "https://....";
+const excel = new ExcelUsingAjax(action);
+excel.run(data);
 ```
