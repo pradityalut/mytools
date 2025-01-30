@@ -1,4 +1,4 @@
-# A. Alert
+# Alert
 - Required [JQuery](https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js)
 Berikut ada beberapa tools untuk generate alert
 
